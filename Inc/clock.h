@@ -10,6 +10,8 @@
 #define IOPCEN 1 << 4 // IO-D enable
 #define IOPBEN 1 << 3 // IO-D enable
 #define IOPAEN 1 << 2 // IO-D enable
+//reservado
+#define AFIOEN 1 << 0 // AFIO enable
 
 
 
