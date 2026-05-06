@@ -6,7 +6,7 @@
 #include "clock.h"
 
 
-#define GPIOG_BASE 0x40012000 
+#define GPIOG_BASE 0x40012000
 #define GPIOF_BASE 0x40011C00
 #define GPIOE_BASE 0x40011800
 #define GPIOD_BASE 0x40011400
@@ -35,16 +35,10 @@ typedef struct {
 #define GPIOG    ((GPIO_TypeDef *) GPIOG_BASE)
 
 
-
-/**
- * @brief GPIO pin configuration value (CNF followed by MODE).
- *
- *     [ CNF_bit1 CNF_bit0 MODE_bit1 MODE_bit0 ]
- *
- */
 typedef enum {
-     GPIO_INPUT  = 0x4,
-	 GPIO_OUTPUT = 0x3
+	 GPIO_INPUT  = 0x4,
+	 GPIO_OUTPUT = 0x3,
+	 GPIO_INPUT_PUPD = 0x8
 } GPIO_Mode;
 
 
@@ -66,6 +60,9 @@ void GPIO_SetPinMode(GPIO_TypeDef *GPIOx, uint32_t pin, GPIO_Mode mode);
  * @param bit_mask Bit mask corresponding to the peripheral clock enable bit.
  */
 void GPIO_EnableClock(uint32_t bit_mask);
+
+void busy_wait_delay(uint32_t time);
+
 
 
 

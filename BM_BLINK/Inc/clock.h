@@ -7,9 +7,9 @@
 
 #define IOPEEN 1 << 6 // IO-E enable
 #define IOPDEN 1 << 5 // IO-D enable
-#define IOPCEN 1 << 4 // IO-D enable
-#define IOPBEN 1 << 3 // IO-D enable
-#define IOPAEN 1 << 2 // IO-D enable
+#define IOPCEN 1 << 4 // IO-C enable
+#define IOPBEN 1 << 3 // IO-B enable
+#define IOPAEN 1 << 2 // IO-A enable
 
 
 
@@ -18,7 +18,7 @@ typedef struct {
     volatile uint32_t RCC_CFGR;         // Offset 0x04
     volatile uint32_t RCC_CIR;          // Offset 0x08
     volatile uint32_t RCC_APB2RSTR;     // Offset 0x0C
-    volatile uint32_t RCC_APB1RSTR;     // Offset 0x10 
+    volatile uint32_t RCC_APB1RSTR;     // Offset 0x10
     volatile uint32_t RCC_AHBENR;       // Offset 0x14
     volatile uint32_t RCC_APB2ENR;      //offeset 0x18
     volatile uint32_t RCC_APB1ENR;      //offeset 0x1c
