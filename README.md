@@ -1,15 +1,5 @@
-# STM32 Minimal HAL
+# blue-pill-baremetal
 
-Implementação de uma pequena camada de abstração sobre os registradores do microcontrolador STM32 e suas aplicações como gpio, interrupção, systick, pwm, timer e adc.
-
-## Hardware
-
-Placa utilizada:
-
-- Blue Pill  
-- Microcontrolador: STM32F103C8T6  
-- Arquitetura: ARM Cortex-M3
-
-Fabricante: STMicroelectronics.
+Practicing with peripherals of the STM32F103C8 (Cortex-M3) in Bare Metal.
 
 ![Blue Pill](docs/bluepill.jpg)
